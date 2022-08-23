@@ -12,17 +12,26 @@ h1{
 
 
 /* NAV */
+
+
+
 #nav-bar{
+    background-color: rgb(29, 29, 31, .5);
+    backdrop-filter: blur(5px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    position: sticky;
+    position: fixed;
     height: 35px;
+    z-index: 100;
+    width: 100vw;
+
 }
 
 #nav-logo{
     width: 25px;
+    padding-right: 20px;
 }
 
 .togglebar{
@@ -41,25 +50,40 @@ h1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
     background-color: rgb(29, 29, 31);
-    position: absolute;
+    position: fixed;
     width: 100%;
     z-index: 15;
-    height: calc(100vh - 55px);
+    height: 100vh;
     opacity: 0;
     display: block;
+    padding-top: 100px;
     transition:  opacity .25s ease-in-out;
+    
 }
 
 #nav-option-wrap.fade{
 opacity: 1;
+z-index: 15;
 }
+
+#nav-option-wrap[class=""]{
+    z-index: -500;
+    
+    }
 
 .nav-option{
     text-align: center;
     color: white;
     padding: 15px;
 
+
+
+}
+
+.nav-option.closedlink{
+    pointer-events: none;
 }
 
 .nav-option>a{
@@ -86,11 +110,12 @@ opacity: 1;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: calc(100vh - 55px);
+    height: 100vh;
 
 }
 
 #main-word{
+    /* color:rgb(144, 221, 144); */
     color: white;
     font-family: Visby;
     position: absolute;
@@ -100,6 +125,7 @@ opacity: 1;
 #headshot-img{
     position: absolute;
     width: 315px;
+     filter: drop-shadow(5px 5px 5px #212121);
 }
 #developer{
     color: white;
@@ -116,6 +142,7 @@ opacity: 1;
 
 /* ABOUT */
 #about-wrapper{
+    padding-top: 75px;
     display: flex;
     flex-direction: column;
     align-items: center;
