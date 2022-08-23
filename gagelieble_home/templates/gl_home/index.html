@@ -1,12 +1,49 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gage Lieble</title>
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <script defer src="{% static 'js/main.js' %}"></script>
 </head>
 <body>
-    It works!
+    <div id="nav-bar">
+        <div id="nav-toggle" class="toggle">
+            <div id="bar-one" class="togglebar"></div>
+            <div id="bar-two" class="togglebar"></div>
+        </div>
+        <img id="nav-logo" src="{% static 'imgs/glogo.svg' %}" alt="">
+    </div>
+
+
+    <div id="nav-option-wrap">
+        <div class="nav-option" id="nav-projects"><a href="#">Projects</a></div>
+        <div class="nav-option" id="nav-education"><a href="#">Education</a></div>
+        <div class="nav-option" id="nav-reachout"><a href="#">Reach Out</a></div>
+    </div>
+
+
+    <div id="intro-wrapper">
+        <h1 id="main-word">SOFTWARE</h1>
+        <img id="headshot-img" src="{% static 'imgs/gagehead.png' %}" alt="">
+        <h1 id="developer">DEVELOPER</h1>
+        <h4 id="myname">Hey, Im <span style="color:rgb(144, 221, 144);">Gage Lieble</span></h4>
+    </div>
+    
+    <div id="about-wrapper">
+        <h1 id="about-head">WHO AM I?</h1>
+        <div id="sentences">
+            <p>I was born in the City of Roses, Portland OR</p>
+            <p>I am a recent graduate from PDX code guild</p>
+            <p>PDX code guild is a fullstack python based bootcamp that has taught me everything from programming to working with others on projects.</p>
+            <p>My interst in software began in my early years of middle school.</p>
+            <p>In middle school I created my first website. This website was developed using HTML and CSS exclusivly which I taught myself by watching various Youtube tutorials and reading through tons of pages on StackOverflow.</p>
+            <p>My programming abilities have definetly improved since then and I am glad to make my childhood passion into a reality</p>
+        
+        </div>
+    </div>
 </body>
 </html>
