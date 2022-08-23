@@ -27,15 +27,53 @@ whoAmIBtn.addEventListener('click', function(){
 })
 
 
+let projectsBtn = document.getElementById('nav-projects')
+let projectSec = document.getElementById('work-wrapper')
+
+projectsBtn.addEventListener('click', function(){
+    navToggle.classList.toggle('active')
+    navOptions.classList.toggle('fade')
+    setTimeout(() => {
+        navOptions.classList.toggle('closed')
+    }, 275)
+    
+    
+    projectSec.scrollIntoView({behavior: 'smooth'})
+})
 
 
+        // NAV BG COLOR
+
+function changeNav(){
+    let navBar = document.getElementById('nav-bar')
+    let navLogo = document.getElementById('nav-logo')
+    let scrollVal = window.scrollY
+    console.log(scrollVal)
+    if (scrollVal < 1690){
+        navBar.classList.remove('bgblur-white')
+        navToggle.classList.remove('navcolorchange')
+        navLogo.src = 'static/imgs/glogo.svg'
+    }
+    else if (scrollVal > 1690 && scrollVal < 2764){
+        navBar.classList.add('bgblur-white')
+        navToggle.classList.add('navcolorchange')
+        navLogo.classList.add('logocolorchange')
+        navLogo.src = 'static/imgs/glogodark.svg'
+    }else if (scrollVal > 2765){
+        navBar.classList.remove('bgblur-white')
+        navToggle.classList.remove('navcolorchange')
+        navLogo.src = 'static/imgs/glogo.svg'
+    }
+}
+
+window.addEventListener('scroll', changeNav)
 
 
 
 // MAIN WORD CHANGER
 let mainWord = document.getElementById('main-word')
 let start = 0
-let randomWords = ['SOFTWARE','DJANGO' , 'WEBSITE', 'PYTHON', 'JAVACRIPT']
+let randomWords = ['SOFTWARE','DJANGO' , 'WEBSITE', 'PYTHON', 'JAVASCRIPT']
 
 function changeWord(){
     mainWord.innerText = randomWords[start]

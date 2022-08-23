@@ -2,8 +2,11 @@ body{
     background-color: rgb(29, 29, 31);
     margin: 0px;
     font-family: Visby;
+    overflow-x: hidden;
 }
-
+html{
+    overflow-x: hidden;
+}
 h1{
     font-size: 50px;
 }
@@ -28,6 +31,17 @@ h1{
     width: 100vw;
 
 }
+
+.bgblur-white{
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    backdrop-filter: blur(5px);
+}
+
+.navcolorchange>div{
+    background-color: rgb(29, 29, 31);
+}
+.logocolorchange{fill:black !important;}
+
 
 #nav-logo{
     width: 25px;
@@ -180,13 +194,141 @@ pointer-events: all;
     flex-direction: column;
     margin-top: 100px;
     background-color: rgb(250, 252, 255);
+    height: 1000px;
+    padding-top: 75px;
 }
 
 #work-head{
     color: rgb(29, 29, 31);
 }
 
+#qrpixel-wrap{
+    width: 100vw;
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+    
+}
 
+#qr-logo{
+    width: 75px;
+    position: absolute;
+    border: 4px solid black;
+}
+#qr-screen{
+    width: 75%;
+    border: 4px solid black;
+    margin: 0px auto;
+}
+#qr-link{
+    
+    margin-left: 30px;
+    width: 75%;
+    border: solid black;
+    border-width: 0px 4px 4px 4px;
+    padding: 10px 0px 10px 0px;
+}
+
+#qr-link>a{
+    color: black;
+    text-decoration: none;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+
+
+
+#dream-wrap{
+    margin-top: 75px;
+    width: 100vw;
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+    
+}
+
+#dream-logo{
+    width: 75px;
+    position: absolute;
+    border: 4px solid black;
+    height: 75px;
+    background-color: #4ea8de;
+}
+
+#dream-screen{
+    width: 75%;
+    border: 4px solid black;
+    margin: 0px auto;
+}
+#dream-link{
+    
+    margin-left: 30px;
+    width: 75%;
+    border: solid black;
+    border-width: 0px 4px 4px 4px;
+    padding: 10px 0px 10px 0px;
+}
+
+#dream-link>a{
+    color: black;
+    text-decoration: none;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+
+
+
+
+
+#weather-wrap{
+    margin-top: 75px;
+    width: 100vw;
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+    
+}
+
+#weather-logo{
+    width: 75px;
+    position: absolute;
+    border: 4px solid black;
+    height: 75px;
+    background-color: rgb(58, 208, 242);
+}
+
+#weather-screen{
+    width: 75%;
+    border: 4px solid black;
+    margin: 0px auto;
+}
+#weather-link{
+    
+    margin-left: 30px;
+    width: 75%;
+    border: solid black;
+    border-width: 0px 4px 4px 4px;
+    padding: 10px 0px 10px 0px;
+}
+
+#weather-link>a{
+    color: black;
+    text-decoration: none;
+    padding-left: 15px;
+    font-size: 20px;
+}
+
+/* EDUCATION */
+#education-wrapper{
+    height: 1000px;
+}
+
+#edu-head{
+    color: white;
+    text-align: center;
+}
 
 /* FONTS */
 @font-face {
