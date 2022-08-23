@@ -60,12 +60,14 @@ h1{
     display: block;
     padding-top: 100px;
     transition:  opacity .25s ease-in-out;
+    pointer-events: none;
     
 }
 
 #nav-option-wrap.fade{
 opacity: 1;
 z-index: 15;
+pointer-events: all;
 }
 
 #nav-option-wrap[class=""]{
@@ -157,6 +159,34 @@ z-index: 15;
     padding: 20px;
     font-size: 20px;
 }
+#languages{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+#languages>img{
+    background-color: white;
+    width: 60px;
+}
+
+
+
+
+/* Work */
+
+#work-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    background-color: rgb(250, 252, 255);
+}
+
+#work-head{
+    color: rgb(29, 29, 31);
+}
+
+
 
 /* FONTS */
 @font-face {

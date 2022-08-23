@@ -35,7 +35,7 @@ whoAmIBtn.addEventListener('click', function(){
 // MAIN WORD CHANGER
 let mainWord = document.getElementById('main-word')
 let start = 0
-let randomWords = ['SOFTWARE','DJANGO' , 'WEBSITE', 'PYTHON', ]
+let randomWords = ['SOFTWARE','DJANGO' , 'WEBSITE', 'PYTHON', 'JAVACRIPT']
 
 function changeWord(){
     mainWord.innerText = randomWords[start]
