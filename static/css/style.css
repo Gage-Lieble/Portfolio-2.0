@@ -33,7 +33,7 @@ h1{
 }
 
 .bgblur-white{
-    background-color: rgba(255, 255, 255, 0.5) !important;
+    background-color: rgba(250, 252, 255, .5) !important;
     backdrop-filter: blur(5px);
 }
 
@@ -142,6 +142,20 @@ pointer-events: all;
     position: absolute;
     width: 315px;
      filter: drop-shadow(5px 5px 5px #212121);
+     animation: headshotBob 5s linear infinite;
+}
+
+
+@keyframes headshotBob {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(8px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
 }
 #developer{
     color: white;
@@ -323,12 +337,182 @@ pointer-events: all;
 /* EDUCATION */
 #education-wrapper{
     height: 1000px;
+    padding-top: 75px;
 }
 
 #edu-head{
     color: white;
     text-align: center;
 }
+
+#pdxcode-title{
+    color: white;
+    text-align: center;
+}
+
+
+#clock-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#time-tags{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.edu-taglines{
+    color: white;
+}
+#clock-outline{
+    width: 350px;
+    height: 350px;
+    border: 20px solid white;
+    border-radius: 500px;
+    margin-left: -60%;
+    position: relative;
+}
+#clock-outline>img{
+    
+    position: absolute;
+    transform: rotate(25deg);
+}
+
+#hour-hand{
+    background-color: white;
+    width: 275px;
+    height: 15px;
+    color: white;
+    margin-left: -110%;
+    position: absolute;
+    transform: rotate(45deg);
+    animation: clockRotate 15s linear infinite;
+}
+#min-hand{
+    background-color: white;
+    width: 225px;
+    height: 15px;
+    color: white;
+    margin-left: -110%;
+    position: absolute;
+    animation: clockRotate 5s linear infinite;
+}
+
+/* #sec-hand{
+    background-color: rgb(144, 221, 144);
+    width: 225px;
+    height: 5px;
+    color: white;
+    margin-left: -110%;
+    position: absolute;
+    animation: clockRotate 8s linear infinite;
+}
+ */
+
+
+
+#teaches-section{
+    margin-top: 100px;
+    padding: 0px 25px 0px 25px;
+}
+
+#graduated-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#grad-title{
+    color: white;
+    text-align: center;
+}
+
+#cert-img{
+    width: 250px;
+    border:4px solid #f37024;
+}
+
+#cert-title{
+    
+    border: solid #f37024;
+    border-width: 0px 4px 4px 4px;
+    width: 250px;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    color: white;
+}
+
+
+/* REACH OUT */
+
+#reachout-section{
+    background-color: rgb(250, 252, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    padding-bottom: 100px;
+    
+}
+#reach-links{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+.reach-btns{
+    border: 5px solid black;
+    width: 65px;
+    text-align: end;
+    padding: 20px 20px 20px 25px;
+    /* position: relative; */
+}
+.reach-btns>a{
+    color: black;
+    text-decoration: none;
+}
+
+#linkedin-logo{
+background-color: rgb(29, 29, 31);
+position: absolute;
+width: 50px;
+margin-top: -59px;
+margin-left: -25px;
+}
+
+#githublight-logo{
+    background-color: rgb(29, 29, 31);
+    position: absolute;
+    width: 50px;
+    margin-top: -59px;
+    margin-left: -25px;
+    }
+
+
+
+/* FOOTER */
+#footer-wrap{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+}
+@keyframes clockRotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+
+
 
 /* FONTS */
 @font-face {

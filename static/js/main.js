@@ -42,6 +42,40 @@ projectsBtn.addEventListener('click', function(){
 })
 
 
+
+
+let educationBtn = document.getElementById('nav-education')
+let educationSec = document.getElementById('education-wrapper')
+
+educationBtn.addEventListener('click', function(){
+    navToggle.classList.toggle('active')
+    navOptions.classList.toggle('fade')
+    setTimeout(() => {
+        navOptions.classList.toggle('closed')
+    }, 275)
+    
+    
+    educationSec.scrollIntoView({behavior: 'smooth'})
+})
+
+
+
+
+
+let reachoutBtn = document.getElementById('nav-reachout')
+let reachoutSec = document.getElementById('reachout-section')
+
+reachoutBtn.addEventListener('click', function(){
+    navToggle.classList.toggle('active')
+    navOptions.classList.toggle('fade')
+    setTimeout(() => {
+        navOptions.classList.toggle('closed')
+    }, 275)
+    
+    
+    reachoutSec.scrollIntoView({behavior: 'smooth'})
+})
+
         // NAV BG COLOR
 
 function changeNav(){
