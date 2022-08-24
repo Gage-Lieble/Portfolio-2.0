@@ -4,6 +4,7 @@ let navToggle = document.querySelector('.toggle')
 let navOptions = document.getElementById('nav-option-wrap')
 let navBtns = document.querySelectorAll('.nav-option')
 navToggle.addEventListener('click', () => {
+    
     navToggle.classList.toggle('active')
     navOptions.classList.toggle('fade')
     setTimeout(() => {
@@ -77,23 +78,27 @@ reachoutBtn.addEventListener('click', function(){
 })
 
         // NAV BG COLOR
-
+let navBar = document.getElementById('nav-bar')
+let navLogo = document.getElementById('nav-logo')
 function changeNav(){
-    let navBar = document.getElementById('nav-bar')
-    let navLogo = document.getElementById('nav-logo')
+    
     let scrollVal = window.scrollY
     console.log(scrollVal)
     if (scrollVal < 1690){
         navBar.classList.remove('bgblur-white')
         navToggle.classList.remove('navcolorchange')
         navLogo.src = 'static/imgs/glogo.svg'
+        navOptions.classList.remove('light-options')
     }
     else if (scrollVal > 1690 && scrollVal < 2764){
+        navOptions.classList.add('light-options')
         navBar.classList.add('bgblur-white')
         navToggle.classList.add('navcolorchange')
         navLogo.classList.add('logocolorchange')
         navLogo.src = 'static/imgs/glogodark.svg'
+
     }else if (scrollVal > 2765){
+        navOptions.classList.remove('light-options')
         navBar.classList.remove('bgblur-white')
         navToggle.classList.remove('navcolorchange')
         navLogo.src = 'static/imgs/glogo.svg'

@@ -40,7 +40,7 @@ h1{
 .navcolorchange>div{
     background-color: rgb(29, 29, 31);
 }
-.logocolorchange{fill:black !important;}
+.logocolorchange{fill:rgb(29, 29, 31) !important;}
 
 
 #nav-logo{
@@ -82,6 +82,13 @@ h1{
 opacity: 1;
 z-index: 15;
 pointer-events: all;
+}
+#nav-option-wrap.light-options{
+    background-color: rgb(250, 252, 255);
+    
+}
+#nav-option-wrap.light-options>.nav-option>a{
+    color: rgb(29, 29, 31);
 }
 
 #nav-option-wrap[class=""]{
@@ -227,24 +234,24 @@ pointer-events: all;
 #qr-logo{
     width: 75px;
     position: absolute;
-    border: 4px solid black;
+    border: 4px solid rgb(29, 29, 31);
 }
 #qr-screen{
     width: 75%;
-    border: 4px solid black;
+    border: 4px solid rgb(29, 29, 31);
     margin: 0px auto;
 }
 #qr-link{
     
     margin-left: 30px;
     width: 75%;
-    border: solid black;
+    border: solid rgb(29, 29, 31);
     border-width: 0px 4px 4px 4px;
     padding: 10px 0px 10px 0px;
 }
 
 #qr-link>a{
-    color: black;
+    color: rgb(29, 29, 31);
     text-decoration: none;
     padding-left: 15px;
     font-size: 20px;
@@ -265,27 +272,27 @@ pointer-events: all;
 #dream-logo{
     width: 75px;
     position: absolute;
-    border: 4px solid black;
+    border: 4px solid rgb(29, 29, 31);
     height: 75px;
     background-color: #4ea8de;
 }
 
 #dream-screen{
     width: 75%;
-    border: 4px solid black;
+    border: 4px solid rgb(29, 29, 31);
     margin: 0px auto;
 }
 #dream-link{
     
     margin-left: 30px;
     width: 75%;
-    border: solid black;
+    border: solid rgb(29, 29, 31);
     border-width: 0px 4px 4px 4px;
     padding: 10px 0px 10px 0px;
 }
 
 #dream-link>a{
-    color: black;
+    color: rgb(29, 29, 31);
     text-decoration: none;
     padding-left: 15px;
     font-size: 20px;
@@ -308,27 +315,27 @@ pointer-events: all;
 #weather-logo{
     width: 75px;
     position: absolute;
-    border: 4px solid black;
+    border: 4px solid rgb(29, 29, 31);
     height: 75px;
     background-color: rgb(58, 208, 242);
 }
 
 #weather-screen{
     width: 75%;
-    border: 4px solid black;
+    border: 4px solid rgb(29, 29, 31);
     margin: 0px auto;
 }
 #weather-link{
     
     margin-left: 30px;
     width: 75%;
-    border: solid black;
+    border: solid rgb(29, 29, 31);
     border-width: 0px 4px 4px 4px;
     padding: 10px 0px 10px 0px;
 }
 
 #weather-link>a{
-    color: black;
+    color: rgb(29, 29, 31);
     text-decoration: none;
     padding-left: 15px;
     font-size: 20px;
@@ -360,7 +367,7 @@ pointer-events: all;
 #time-tags{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
 }
 .edu-taglines{
     color: white;
@@ -388,6 +395,7 @@ pointer-events: all;
     position: absolute;
     transform: rotate(45deg);
     animation: clockRotate 15s linear infinite;
+    
 }
 #min-hand{
     background-color: white;
@@ -461,14 +469,14 @@ pointer-events: all;
     width: 75%;
 }
 .reach-btns{
-    border: 5px solid black;
+    border: 5px solid rgb(29, 29, 31);
     width: 65px;
     text-align: end;
     padding: 20px 20px 20px 25px;
     /* position: relative; */
 }
 .reach-btns>a{
-    color: black;
+    color: rgb(29, 29, 31);
     text-decoration: none;
 }
 
