@@ -3,8 +3,9 @@
 let navToggle = document.querySelector('.toggle')
 let navOptions = document.getElementById('nav-option-wrap')
 let navBtns = document.querySelectorAll('.nav-option')
+let topo = document.getElementById('topo-left')
 navToggle.addEventListener('click', () => {
-    
+    topo.classList.toggle('topogone')
     navToggle.classList.toggle('active')
     navOptions.classList.toggle('fade')
     setTimeout(() => {

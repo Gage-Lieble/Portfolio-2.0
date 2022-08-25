@@ -10,7 +10,8 @@
     <script defer src="{% static 'js/main.js' %}"></script>
 </head>
 <body>
-
+    <img id="topo-left" src="{% static 'imgs/topoL.svg' %}" alt="">
+    <img id="topo-right" src="{% static 'imgs/topoR.svg' %}" alt="">
     <div id="nav-bar">
         <div id="nav-toggle" class="toggle">
             <div id="bar-one" class="togglebar"></div>
@@ -29,6 +30,7 @@
 
 
     <div id="intro-wrapper">
+        
         <h1 id="main-word">SOFTWARE</h1>
         <img id="headshot-img" src="{% static 'imgs/gagehead.png' %}" alt="">
         <h1 id="developer">DEVELOPER</h1>
@@ -36,6 +38,7 @@
     </div>
     
     <div id="about-wrapper">
+        
         <h1 id="about-head">WHO AM I?</h1>
         <div id="sentences">
             <p>I was born in the City of Roses, Portland OR</p>
@@ -87,7 +90,7 @@
 
     <div id="education-wrapper">
         <h1 id="edu-head">EDUCATION</h1>
-        <h2 id="pdxcode-title">PDX CODE GUILD</h2>
+        <h2 id="pdxcode-title">PDX CODE GUILD <img id="guild-logo" src="{% static 'imgs/guildlogo.svg' %}" alt=""></h2>
         <div id="clock-section">
             
         <div id="clock-outline"><img src="{% static 'imgs/clockdots.svg' %}" alt=""></div><span id="hour-hand"></span><span id="min-hand"></span><span id="sec-hand"></span>
@@ -100,6 +103,34 @@
     </div>
     <div id="teaches-section">
     <h2 class="edu-taglines">That teaches . . .</h2>
+
+        <div class="teachsub-section">
+            <h2 class="edu-taglines">Various Frameworks</h2>
+            <h3 class="frameworks">Django</h3>
+            <h3 class="frameworks">Vue.js</h3>
+            <h3 class="frameworks">Django Rest</h3>
+            <h3 class="frameworks">Flask</h3>
+            
+        </div>
+
+        <div class="teachsub-section align-start">
+            <h2 class="edu-taglines">Programming Languages</h2>
+            <h3 class="frameworks">Python</h3>
+            <h3 class="frameworks">Javascript</h3>
+            <h3 class="frameworks">Html</h3>
+            <h3 class="frameworks">Css</h3>
+        </div>
+
+        <div class="teachsub-section">
+            <h2 class="edu-taglines">Technical Tools</h2>
+            <h3 class="frameworks">SQL</h3>
+            <h3 class="frameworks">REST API</h3>
+            <h3 class="frameworks">Github</h3>
+            <h3 class="frameworks">Pip Packages</h3>
+            
+        </div>
+
+        
 </div>
     </div>
 
