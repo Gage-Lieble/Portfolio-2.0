@@ -461,7 +461,36 @@ pointer-events: all;
 .frameworks{
     color: white;
 }
+#frameworklogo-wrap{
+    width: 75%;
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 0 auto;
+    height: 400px;
+    /* margin-left: 100px; */
+    animation: headshotBob 3s linear infinite;
 
+}
+#frameworklogo-wrap>img{
+    width: 40%;
+}
+
+#programminglogo-wrap{
+    width: 75%;
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 0 auto;
+    height: 400px;
+    /* margin-left: 100px; */
+    animation: headshotBob 3.5s linear infinite;
+}
+#programminglogo-wrap>img{
+    width: 40%;
+}
 #graduated-section{
     display: flex;
     flex-direction: column;
