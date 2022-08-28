@@ -518,7 +518,15 @@ pointer-events: all;
     color: white;
 }
 
+#tech-tools{
+    align-items: center;
+}
 
+#resume-link {
+    color:#f37024;
+    margin: 60px 0px 0px 0px;
+    padding: 15px;
+}
 /* REACH OUT */
 
 #reachout-section{
@@ -528,6 +536,7 @@ pointer-events: all;
     align-items: center;
     margin-top: 100px;
     padding-bottom: 100px;
+    padding-top: 50px;
     
 }
 #reach-links{
