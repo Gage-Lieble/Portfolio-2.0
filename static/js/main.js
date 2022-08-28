@@ -20,6 +20,7 @@ let whoAmISec = document.getElementById('about-wrapper')
 whoAmIBtn.addEventListener('click', function(){
     navToggle.classList.toggle('active')
     navOptions.classList.toggle('fade')
+    topo.classList.toggle('topogone')
     setTimeout(() => {
         navOptions.classList.toggle('closed')
     }, 275)
@@ -35,6 +36,7 @@ let projectSec = document.getElementById('work-wrapper')
 projectsBtn.addEventListener('click', function(){
     navToggle.classList.toggle('active')
     navOptions.classList.toggle('fade')
+    topo.classList.toggle('topogone')
     setTimeout(() => {
         navOptions.classList.toggle('closed')
     }, 275)
@@ -52,6 +54,7 @@ let educationSec = document.getElementById('education-wrapper')
 educationBtn.addEventListener('click', function(){
     navToggle.classList.toggle('active')
     navOptions.classList.toggle('fade')
+    topo.classList.toggle('topogone')
     setTimeout(() => {
         navOptions.classList.toggle('closed')
     }, 275)
@@ -70,6 +73,7 @@ let reachoutSec = document.getElementById('reachout-section')
 reachoutBtn.addEventListener('click', function(){
     navToggle.classList.toggle('active')
     navOptions.classList.toggle('fade')
+    topo.classList.toggle('topogone')
     setTimeout(() => {
         navOptions.classList.toggle('closed')
     }, 275)
