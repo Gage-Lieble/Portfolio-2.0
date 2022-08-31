@@ -31,7 +31,7 @@ whoAmIBtn.addEventListener('click', function(){
 
 
 let projectsBtn = document.getElementById('nav-projects')
-let projectSec = document.getElementById('work-wrapper')
+let projectSec = document.getElementById('work-head')
 
 projectsBtn.addEventListener('click', function(){
     navToggle.classList.toggle('active')
@@ -85,6 +85,7 @@ reachoutBtn.addEventListener('click', function(){
         // NAV BG COLOR
 let navBar = document.getElementById('nav-bar')
 let navLogo = document.getElementById('nav-logo')
+
 function changeNav(){
     
     let scrollVal = window.scrollY
@@ -95,7 +96,7 @@ function changeNav(){
         navLogo.src = 'static/imgs/glogo.svg'
         navOptions.classList.remove('light-options')
     }
-    else if (scrollVal > 1690 && scrollVal < 2764){
+    else if (scrollVal > 1765 && scrollVal < 3575){
         navOptions.classList.add('light-options')
         navBar.classList.add('bgblur-white')
         navToggle.classList.add('navcolorchange')
