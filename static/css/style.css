@@ -400,18 +400,16 @@ pointer-events: all;
 }
 
 #hour-hand{
-    
+    background-color: white;
     width: 275px;
     height: 15px;
-    
-    background: linear-gradient(to right, rgba(255,255,255,1) 50%, rgba(243, 8, 8, 0) 50%);
     position: absolute;
     transform: rotate(45deg);
-    animation: clockRotate 10s linear infinite;
+    animation: clockRotate 15s linear infinite;
     
 }
 #min-hand{
-    background: linear-gradient(to right, rgba(255,255,255,1) 50%, rgba(243, 8, 8, 0) 50%);
+    background-color: white;
     width: 225px;
     height: 15px;
     
@@ -459,9 +457,7 @@ pointer-events: all;
     align-items: center;
     margin: 0 auto;
     height: 400px;
-    /* margin-left: 100px; */
     animation: headshotBob 3s linear infinite;
-
 }
 #frameworklogo-wrap>img{
     width: 40%;
@@ -521,6 +517,21 @@ pointer-events: all;
     color:#c24700;
 }
 /* REACH OUT */
+#topo-reach-right{
+    position: absolute;
+    width: 70px;
+    right: 0;
+    transform: scaleX(-1);
+    margin-top: 300px;
+}
+
+#topo-reach-left{
+    position: absolute;
+    width: 110px;
+    transform: scaleX(-1);
+    left: 0;
+    
+}
 
 #reachout-section{
     background-color: rgb(250, 252, 255);
@@ -529,41 +540,36 @@ pointer-events: all;
     align-items: center;
     margin-top: 100px;
     padding-bottom: 100px;
-    padding-top: 50px;
+    
     
 }
+#reachout-section>h1{
+    margin-top: 100px;
+}
 #reach-links{
+    width: 325px;
     display: flex;
+    margin: 0 auto;
     justify-content: space-between;
-    width: 75%;
+    align-items: center;
+    z-index: 11;
+    margin-top: 25px;
 }
 .reach-btns{
-    border: 5px solid rgb(29, 29, 31);
-    width: 65px;
-    text-align: end;
-    padding: 20px 20px 20px 25px;
-    /* position: relative; */
-}
-.reach-btns>a{
-    color: rgb(29, 29, 31);
+    border: 4px solid rgb(29, 29, 31);
+    background-color: #0f0f0f;
+    padding: 15px;
+    color: white;
     text-decoration: none;
+    text-align: center;
+    z-index: 11;
+    width: 100px;
+}
+.reach-btns:hover{
+    background-color: #282828;
+    cursor: pointer;
 }
 
-#linkedin-logo{
-background-color: rgb(29, 29, 31);
-position: absolute;
-width: 50px;
-margin-top: -59px;
-margin-left: -25px;
-}
-
-#githublight-logo{
-    background-color: rgb(29, 29, 31);
-    position: absolute;
-    width: 50px;
-    margin-top: -59px;
-    margin-left: -25px;
-    }
 
 
 
@@ -620,7 +626,9 @@ margin-left: -25px;
     #sentences{
         font-size: 30px;
     }
-
+    #teachsub{
+        max-width: 100vw;
+    }
   
     
     #clock-section{
@@ -635,12 +643,12 @@ margin-left: -25px;
     #hour-hand{
         width: 350px;
         height: 20px;
-        
+        animation: clockRotate 6s linear infinite;
     }
     #min-hand{
         width: 300px;
         height: 20px;
-        
+        animation: clockRotate 3s linear infinite;
     }
 
     #time-tags>h2{
@@ -683,7 +691,7 @@ margin-left: -25px;
         font-size: 25px;
     }
     #resume-link{
-        font-size: 25px;
+        font-size: 20px;
     }
     #reach-links{
         margin-top: 50px;
@@ -732,6 +740,8 @@ margin-left: -25px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        /* transform: skew(-15deg, -15deg); */
+        
     }
     #hour-hand{
         background: linear-gradient(to right, rgba(255,255,255,1) 50%, rgba(243, 8, 8, 0) 50%);
@@ -752,5 +762,35 @@ margin-left: -25px;
         margin-left: 0%;
         position: absolute;
         animation: clockRotate 5s linear infinite;
+    }
+    #frameworklogo-wrap{
+        width: 800px;
+        position: absolute;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin: 0 auto;
+        height: 400px;
+        animation: headshotBob 3s linear infinite;
+        padding: 100px 0px 0px 0px;
+    }
+    #frameworklogo-wrap>img{
+        width: 40%;
+        max-width: 200px;
+    }
+    #programminglogo-wrap{
+        width: 800px;
+        position: absolute;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin: 0 auto;
+        height: 400px;
+        animation: headshotBob 3.5s linear infinite;
+        padding: 100px 100px 0px 0px;
+    }
+    #programminglogo-wrap>img{
+        width: 40%;
+        max-width: 200px;
     }
 }
