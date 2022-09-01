@@ -87,23 +87,23 @@ let navBar = document.getElementById('nav-bar')
 let navLogo = document.getElementById('nav-logo')
 
 function changeNav(){
+    let builtSec = document.getElementById('work-head').getBoundingClientRect() // Tracks location of built section
+    let eduSec = document.getElementById('education-wrapper').getBoundingClientRect() // Tracks location of edu section
     
-    let scrollVal = window.scrollY
-    console.log(scrollVal)
-    if (scrollVal < 1690){
+    if (builtSec.top > 0){
         navBar.classList.remove('bgblur-white')
         navToggle.classList.remove('navcolorchange')
         navLogo.src = 'static/imgs/glogo.svg'
         navOptions.classList.remove('light-options')
     }
-    else if (scrollVal > 1765 && scrollVal < 3575){
+    else if (builtSec.top <= 0 && eduSec.top >= 0){
         navOptions.classList.add('light-options')
         navBar.classList.add('bgblur-white')
         navToggle.classList.add('navcolorchange')
         navLogo.classList.add('logocolorchange')
         navLogo.src = 'static/imgs/glogodark.svg'
 
-    }else if (scrollVal > 2765){
+    }else if (eduSec.top <= 0){
         navOptions.classList.remove('light-options')
         navBar.classList.remove('bgblur-white')
         navToggle.classList.remove('navcolorchange')
@@ -129,7 +129,7 @@ function changeWord(){
     else{
         start = 0
     }
-    setTimeout('changeWord()', 4000)
+    setTimeout('changeWord()', 2000)
 }
 
 changeWord()
