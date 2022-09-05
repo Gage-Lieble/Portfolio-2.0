@@ -93,7 +93,7 @@ function changeNav(){
     if (builtSec.top > 0){
         navBar.classList.remove('bgblur-white')
         navToggle.classList.remove('navcolorchange')
-        navLogo.src = 'static/imgs/glogo.svg'
+        navLogo.src = 'static/portfolio/imgs/glogo.svg'
         navOptions.classList.remove('light-options')
     }
     else if (builtSec.top <= 0 && eduSec.top >= 0){
@@ -101,13 +101,13 @@ function changeNav(){
         navBar.classList.add('bgblur-white')
         navToggle.classList.add('navcolorchange')
         navLogo.classList.add('logocolorchange')
-        navLogo.src = 'static/imgs/glogodark.svg'
+        navLogo.src = 'static/portfolio/imgs/glogodark.svg'
 
     }else if (eduSec.top <= 0){
         navOptions.classList.remove('light-options')
         navBar.classList.remove('bgblur-white')
         navToggle.classList.remove('navcolorchange')
-        navLogo.src = 'static/imgs/glogo.svg'
+        navLogo.src = 'static/portfolio/imgs/glogo.svg'
     }
 }
 

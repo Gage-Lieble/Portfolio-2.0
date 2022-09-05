@@ -15,6 +15,7 @@ body::-webkit-scrollbar {
 
 html{
     overflow-x: hidden;
+    font-family: Visby;
 }
 h1{
     font-size: 50px;
@@ -273,7 +274,7 @@ pointer-events: all;
     border: 4px solid rgb(29, 29, 31);
     z-index: 10;
     margin-top: 40px;
-    filter: drop-shadow(0px 35px 30px #bbbbbb);
+    
     
     
 }
@@ -281,7 +282,7 @@ pointer-events: all;
     width: 100%;
     border: 4px solid rgb(29, 29, 31);
     margin: 0px auto;
-    filter: drop-shadow(0px 35px 30px #bbbbbb);
+    
 }
 .work-links{
     width: 300px;
@@ -503,7 +504,11 @@ pointer-events: all;
     text-align: center;
     color: white;
 }
-
+#certification-wrap{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 #tech-tools{
     align-items: center;
 }
@@ -600,7 +605,7 @@ pointer-events: all;
 /* FONTS */
 @font-face {
     font-family: 'Visby';
-    src: url('/static/css/fonts/Visby.ttf') format("truetype");
+    src: url('/static/portfolio/fonts/Visby.ttf');
 }
 
 
@@ -700,6 +705,12 @@ pointer-events: all;
 }
 
 @media screen and (min-width: 1024px) {
+    .work-logo{
+        filter: drop-shadow(0px 35px 30px #bbbbbb);
+    }
+    .work-img{
+        filter: drop-shadow(0px 35px 30px #bbbbbb);
+    }
     h1{
         font-size: 65px !important;
     }

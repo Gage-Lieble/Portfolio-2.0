@@ -2,22 +2,93 @@
 {% load static %}
 <html lang="en">
 <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3G9YHKMP5Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-3G9YHKMP5Y');
+    </script>
+    <meta name="keywords" content="html, css, javascript, django, flask, gage lieble, pdxcodingguild, pdxcoding, portfolio, web design, web developement, full stack, front end, back end, coding, programming">
+    <meta name="oj:type" content="website">
+    <meta name="og:title" property="og:title" content="Gage Liebles Webdev Portfolio">
+    <meta name="description" content="Hi, my name is Gage Lieble! I am a software developer that has graduated from PDX code guild which is a 400+ hour bootcamp that teaches Javascript, Django, Python, Html, and Css. With these various lanuages, I am able to create the front and back-end sections of websites.">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gage Lieble</title>
-    <link rel="stylesheet" href="{% static 'css/style.css'%}">
-    <script defer src="{% static 'js/main.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'portfolio/css/style.css'%}">
+    <script defer src="{% static 'portfolio/js/main.js' %}"></script>
+    <link rel="icon" href="{% static 'portfolio/imgs/glogo.svg' %}">
 </head>
+
+<!--
+
+                                                                            ///
+                                                                          //////
+                                                                         ///////
+                                                                       .//////. 
+                                                                      ///////   
+                                                                     ///////    
+                                                                    ///////     
+                                                                  .///////      
+                                             /////////           ////////       
+                                           ////////////         ////////        
+                                         */////////////        ////////         
+                                        //////////////        ////////          
+                                       ////// ///////       .////////           
+                                      ////// ///////.      /////////.           
+                                     ////// ///////,      /////////,            
+                                    *///// ///////       //////////        ..   
+                                    /////*///////      .//////////       /////  
+                                   *////////////      ///////////*      //////  
+                                  .////////////      ////////////      //////   
+                                  ////////////      ////////////      //////,   
+                                  //////////*     .////////////      *//////    
+                                 ///////////     ./////////////      //////     
+                                 /////////,     ////////*/////      */////      
+                                 ////////.    *///////*./////,      //////      
+                                ////////,    ////////  //////      */////.      
+                               *///////,   /////////  //////*     .//////       
+                              .////////  /////////.   //////      //////,       
+                             ,///////////////////    //////       //////        
+                            .//////////////////     *//////      */////*        
+                            /////////////////       //////       //////         
+        //,               //////// *//////,        ,//////       //////         
+       ////////          ////////                  ///////      //////          
+        ///////////,   .///////,                  *//////.      //////          
+          ////////////////////.                   ///////       //////          
+           ,//////////////////*,                 ,//////,      */////           
+             ,/////////////////////////          ///////       //////           
+  /*           *//////////   .,/////////////.    ///////       //////           
+/////         ////////////           ///////    ///////*      */////.           
+  //////..//////////////////.                   ///////       */////.           
+   /////////////////. /////////                *///////       //////            
+     /////////////      *////////.             *///////      ,//////            
+          //*              /////////           ////////      ,/////,            
+                             *////////.       .///////        /////             
+                                /////////.    *///////                          
+                                  ./////////. ,///////       ,////*             
+                                      ////////////////      .///////            
+                                        */////////////       //////             
+                                           //////////                           
+                                              *//////                           
+                                                                                
+                                                                            
+    -->
 <body>
-    <img id="topo-left" src="{% static 'imgs/topoL.svg' %}" alt="">
-    <img id="topo-right" src="{% static 'imgs/topoR.svg' %}" alt="">
+    <img id="topo-left" src="{% static 'portfolio/imgs/topoL.svg' %}" alt="">
+    <img id="topo-right" src="{% static 'portfolio/imgs/topoR.svg' %}" alt="">
     <div id="nav-bar">
         <div id="nav-toggle" class="toggle">
             <div id="bar-one" class="togglebar"></div>
             <div id="bar-two" class="togglebar"></div>
         </div>
-        <img id="nav-logo" src="{% static 'imgs/glogo.svg' %}" alt="">
+        <img id="nav-logo" src="{% static 'portfolio/imgs/glogo.svg' %}" alt="glogo">
     </div>
 
 
@@ -32,7 +103,7 @@
     <div id="intro-wrapper">
         
         <h1 id="main-word">SOFTWARE</h1>
-        <img id="headshot-img" src="{% static 'imgs/gagehead.png' %}" alt="headphoto">
+        <img id="headshot-img" src="{% static 'portfolio/imgs/gagehead.png' %}" alt="headphoto">
         <h1 id="developer">DEVELOPER</h1>
         <h4 id="myname">Hey, Im <span style="color:rgb(144, 221, 144);">Gage Lieble</span></h4>
     </div>
@@ -50,10 +121,10 @@
             <p style="text-align:center"><span style="color:rgb(144, 221, 144);">some</span> of my tech knowlege</p>
             
         </div>
-        </div><div id="languages"><img src="{% static 'imgs/django.svg' %}" alt="">
-            <img src="{% static 'imgs/python.svg' %}" alt="">
-            <img src="{% static 'imgs/javascript.svg' %}" alt="">
-            <img src="{% static 'imgs/git.svg' %}" alt="">
+        </div><div id="languages"><img src="{% static 'portfolio/imgs/django.svg' %}" alt="">
+            <img src="{% static 'portfolio/imgs/python.svg' %}" alt="">
+            <img src="{% static 'portfolio/imgs/javascript.svg' %}" alt="">
+            <img src="{% static 'portfolio/imgs/git.svg' %}" alt="">
     </div>
 
 <h1 id="work-head">IVE BUILT</h1>
@@ -61,38 +132,38 @@
         
         <div>
         <div class="site-wrap">
-            <img class="work-logo" src="{% static 'imgs/qrlogo.svg' %}" alt="qrlogo">
-            <img class="work-img" src="{% static 'imgs/qrscreen.jpg' %}" alt="qrscreen">
+            <img class="work-logo" src="{% static 'portfolio/imgs/qrlogo.svg' %}" alt="qrlogo">
+            <img class="work-img" src="{% static 'portfolio/imgs/qrscreen.jpg' %}" alt="qrscreen">
         </div>
         <div class="work-links"><a class="qr-links" href="https://github.com/Gage-Lieble/QrPixel">Github ></a><a class="qr-links" href="http://qrpixel.herokuapp.com/">QrPixel ></a></div>
         <div id="work-languages">
-            <img src="{% static 'imgs/javascript.svg' %}" alt="">
-            <img src="{% static 'imgs/django.svg' %}" alt="">
-            <img src="{% static 'imgs/python.svg' %}" alt="">
+            <img src="{% static 'portfolio/imgs/javascript.svg' %}" alt="">
+            <img src="{% static 'portfolio/imgs/django.svg' %}" alt="">
+            <img src="{% static 'portfolio/imgs/python.svg' %}" alt="">
             </div>
         </div>
         <div>
         <div class="site-wrap">
-            <img id="dream-logo" class="work-logo" src="{% static 'imgs/dreamstreamlogo.svg' %}" alt="dreamlogo">
-            <img class="work-img" src="{% static 'imgs/dreamstreamscreen.jpg' %}" alt="dreamscreen">
+            <img id="dream-logo" class="work-logo" src="{% static 'portfolio/imgs/dreamstreamlogo.svg' %}" alt="dreamlogo">
+            <img class="work-img" src="{% static 'portfolio/imgs/dreamstreamscreen.jpg' %}" alt="dreamscreen">
         </div>
         <div class="work-links"><a class="dream-links" href="https://github.com/Gage-Lieble/DreamStream">Github ></a><a class="dream-links" href="https://dream-stream-capstone.herokuapp.com/">DreamStream ></a></div>
         <div id="work-languages">
-            <img src="{% static 'imgs/javascript.svg' %}" alt="">
-            <img src="{% static 'imgs/django.svg' %}" alt="">
-            <img src="{% static 'imgs/python.svg' %}" alt="">
+            <img src="{% static 'portfolio/imgs/javascript.svg' %}" alt="">
+            <img src="{% static 'portfolio/imgs/django.svg' %}" alt="">
+            <img src="{% static 'portfolio/imgs/python.svg' %}" alt="">
             </div>
         </div>
 
         <div>
         <div class="site-wrap">
-            <img id="weather-logo" class="work-logo" src="{% static 'imgs/weatherlogo.svg' %}" alt="weatherlogo">
-            <img class="work-img" src="{% static 'imgs/weatherscreen.jpg' %}" alt="weatherscreen">
+            <img id="weather-logo" class="work-logo" src="{% static 'portfolio/imgs/weatherlogo.svg' %}" alt="weatherlogo">
+            <img class="work-img" src="{% static 'portfolio/imgs/weatherscreen.jpg' %}" alt="weatherscreen">
         </div>
         <div class="work-links"><a class="weather-links" href="https://github.com/Gage-Lieble/APIweatherapp">Github ></a><a class="weather-links" href="https://gagelieble.com/weather/g/">Weather ></a></div>
         <div id="work-languages">
-            <img src="{% static 'imgs/django.svg' %}" alt="">
-            <img src="{% static 'imgs/python.svg' %}" alt="">
+            <img src="{% static 'portfolio/imgs/django.svg' %}" alt="">
+            <img src="{% static 'portfolio/imgs/python.svg' %}" alt="">
             </div>
         </div>
     </div> 
@@ -103,10 +174,10 @@
 
     <div id="education-wrapper">
         <h1 id="edu-head">EDUCATION</h1>
-        <h2 id="pdxcode-title">PDX CODE GUILD <img id="guild-logo" src="{% static 'imgs/guildlogo.svg' %}" alt=""></h2>
+        <h2 id="pdxcode-title">PDX CODE GUILD <img id="guild-logo" src="{% static 'portfolio/imgs/guildlogo.svg' %}" alt=""></h2>
         <div id="clock-section">
             
-        <div id="clock-outline"><img src="{% static 'imgs/clockdots.svg' %}" alt=""><span id="hour-hand"></span><span id="min-hand"></span><span id="sec-hand"></span></div>
+        <div id="clock-outline"><img src="{% static 'portfolio/imgs/clockdots.svg' %}" alt=""><span id="hour-hand"></span><span id="min-hand"></span><span id="sec-hand"></span></div>
         <div id="time-tags">
         <h2 style='margin-left: -25px;' class="edu-taglines">Is a</h2>
         <h2 class="edu-taglines">500+ hour</h2>
@@ -120,7 +191,7 @@
         <div class="teachsub-section">
             <h2 class="edu-taglines">Various Frameworks</h2>
             <div id="frameworklogo-wrap">
-                <img src="{% static 'imgs/frameworklogos.svg' %}" alt="">
+                <img src="{% static 'portfolio/imgs/frameworklogos.svg' %}" alt="">
             </div>
             <h3 class="frameworks">Django</h3>
             <h3 class="frameworks">Vue.js</h3>
@@ -132,7 +203,7 @@
         <div class="teachsub-section align-start">
             <h2 class="edu-taglines">Programming Languages</h2>
             <div id="programminglogo-wrap">
-                <img src="{% static 'imgs/programminglogos.svg' %}" alt="">
+                <img src="{% static 'portfolio/imgs/programminglogos.svg' %}" alt="">
             </div>
             <h3 class="frameworks">Python</h3>
             <h3 class="frameworks">Javascript</h3>
@@ -155,14 +226,16 @@
 
     <div id="graduated-section">
         <h2 id="grad-title">I Graduated in 2022!</h2>
-        <img id="cert-img" src="{% static 'imgs/cert.jpg' %}" alt="cert">
-        <div id="cert-title">PDX Code Guild Certification</div>
-        <a id="resume-link" href="{% static 'imgs/GageLiebleResume8-27.pdf' %}">My Resume ></a>
+        <img id="cert-img" src="{% static 'portfolio/imgs/cert.jpg' %}" alt="cert">
+        
     </div>
-
+    <div id="certification-wrap">
+    <div id="cert-title">PDX Code Guild Certification</div>
+        <a id="resume-link" href="{% static 'portfolio/imgs/GageLiebleResume8-27.pdf' %}">My Resume ></a>
+    </div>
     <div id="reachout-section">
-        <img id="topo-reach-left" src="{% static 'imgs/topoL.svg' %}" alt="">
-        <img id="topo-reach-right" src="{% static 'imgs/topoR.svg' %}" alt="">
+        <img id="topo-reach-left" src="{% static 'portfolio/imgs/topoL.svg' %}" alt="">
+        <img id="topo-reach-right" src="{% static 'portfolio/imgs/topoR.svg' %}" alt="">
         <h1>REACH OUT!</h1>
         <h2 style="font-size:30px">gagelieble@hotmail.com</h2>
         <div id="reach-links">
