@@ -49,9 +49,9 @@ h1{
 #nav-bar{
     background-color: rgb(29, 29, 31, .5);
     backdrop-filter: blur(5px);
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -ms-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -66,9 +66,9 @@ h1{
 .bgblur-white{
     background-color: rgba(250, 252, 255, .5) !important;
     backdrop-filter: blur(5px);
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -ms-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    -ms-backdrop-filter: blur(5px);
 
 }
 .navcolorchange>div{
@@ -441,6 +441,7 @@ pointer-events: all;
 #teaches-section{
     margin-top: 100px;
     padding: 0px 25px 0px 25px;
+    margin-bottom: 100%;
     
 }
 .teachsub-section{
@@ -448,6 +449,7 @@ pointer-events: all;
     flex-direction: column;
     align-items: flex-end;
     margin-top: 75px;
+    
 }
 
 .align-start{
@@ -510,11 +512,7 @@ pointer-events: all;
     text-align: center;
     color: white;
 }
-#certification-wrap{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
+
 #tech-tools{
     align-items: center;
 }
@@ -611,7 +609,7 @@ pointer-events: all;
 /* FONTS */
 @font-face {
     font-family: 'Visby';
-    src: url('/static/portfolio/fonts/Visby.ttf');
+    src: url('/static/portfolio/font/visby.ttf');
 }
 
 
