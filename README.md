@@ -9,5 +9,5 @@ GageLieble.com is a website that displays basic personal details about me as wel
 - Navigation color change
 - SVG animations
 - Responisvness
-- add more
+
 
