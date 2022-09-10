@@ -1,52 +1,53 @@
-body{
+body {
     background-color: rgb(29, 29, 31);
     margin: 0px;
     font-family: Visby;
     overflow-x: hidden;
 }
-::selection{
-    background-color:rgb(144, 221, 144);
+
+::selection {
+    background-color: rgb(144, 221, 144);
     color: #212121;
 }
+
 body::-webkit-scrollbar {
-    width: 0px;   
+    width: 0px;
 }
 
-
-html{
+html {
     overflow-x: hidden;
     font-family: Visby;
 }
-h1{
+
+h1 {
     font-size: 50px;
 }
 
+
 /* TOPO */
 
-#topo-left{
+#topo-left {
     position: absolute;
     width: 125px;
     right: 0;
     z-index: 101;
-       
 }
 
-#topo-right{
+#topo-right {
     position: absolute;
     width: 70px;
     bottom: 0;
     left: 0;
-    
 }
 
-.topogone{
+.topogone {
     display: none;
 }
+
+
 /* NAV */
 
-
-
-#nav-bar{
+#nav-bar {
     background-color: rgb(29, 29, 31, .5);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -60,43 +61,45 @@ h1{
     height: 35px;
     z-index: 100;
     width: 100vw;
-
 }
 
-.bgblur-white{
+.bgblur-white {
     background-color: rgba(250, 252, 255, .5) !important;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     -moz-backdrop-filter: blur(5px);
     -ms-backdrop-filter: blur(5px);
-
 }
-.navcolorchange>div{
+
+.navcolorchange>div {
     background-color: rgb(29, 29, 31);
 }
-.logocolorchange{fill:rgb(29, 29, 31) !important;}
 
+.logocolorchange {
+    fill: rgb(29, 29, 31) !important;
+}
 
-#nav-logo{
+#nav-logo {
     width: 25px;
     padding-right: 20px;
 }
 
-.togglebar{
+.togglebar {
     width: 20px;
     height: 3px;
     background-color: white;
     margin-top: 7px;
 }
-#nav-toggle{
+
+#nav-toggle {
     padding: 5px 10px 10px 10px;
 }
-#nav-toggle:hover{
+
+#nav-toggle:hover {
     cursor: pointer;
 }
 
-
-#nav-option-wrap{
+#nav-option-wrap {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,85 +112,86 @@ h1{
     opacity: 0;
     display: block;
     padding-top: 100px;
-    transition:  opacity .25s ease-in-out;
+    transition: opacity .25s ease-in-out;
     pointer-events: none;
-    
 }
 
-#nav-option-wrap.fade{
-opacity: 1;
-z-index: 15;
-pointer-events: all;
+#nav-option-wrap.fade {
+    opacity: 1;
+    z-index: 15;
+    pointer-events: all;
 }
-#nav-option-wrap.light-options{
+
+#nav-option-wrap.light-options {
     background-color: rgb(250, 252, 255);
-    
 }
-#nav-option-wrap.light-options>.nav-option>a{
+
+#nav-option-wrap.light-options>.nav-option>a {
     color: rgb(29, 29, 31);
 }
-#nav-option-wrap.light-options>.nav-option>a:hover{
+
+#nav-option-wrap.light-options>.nav-option>a:hover {
     color: rgb(120, 120, 130);
 }
-#nav-option-wrap[class=""]{
-    z-index: -500;
-    
-    }
 
-.nav-option{
+#nav-option-wrap[class=""] {
+    z-index: -500;
+}
+
+.nav-option {
     text-align: center;
     color: white;
     padding: 15px;
 }
-.nav-option>a:hover{
+
+.nav-option>a:hover {
     color: rgb(205, 205, 205);
 }
-.nav-option.closedlink{
+
+.nav-option.closedlink {
     pointer-events: none;
 }
 
-.nav-option>a{
+.nav-option>a {
     color: white;
     text-decoration: none;
 }
 
-.toggle.active>#bar-one{
+.toggle.active>#bar-one {
     transform: translateY(5px) rotate(45deg);
     transition: .4s ease;
 }
 
-.toggle.active>#bar-two{
+.toggle.active>#bar-two {
     transform: translateY(-5px) rotate(-45deg);
     transition: .4s ease;
 }
 
 
-
 /* TOP INTRO */
 
-#intro-wrapper{
+#intro-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-
 }
 
-#main-word{
+#main-word {
     color: white;
     font-family: Visby;
     position: absolute;
     padding-bottom: 325px;
     text-align: center;
 }
-#headshot-img{
+
+#headshot-img {
     position: absolute;
     width: 315px;
-     filter: drop-shadow(5px 5px 5px #212121);
-     animation: headshotBob 5s linear infinite;
+    filter: drop-shadow(5px 5px 5px #212121);
+    animation: headshotBob 5s linear infinite;
 }
-
 
 @keyframes headshotBob {
     0% {
@@ -196,101 +200,97 @@ pointer-events: all;
     50% {
         transform: translateY(8px);
     }
-    100%{
+    100% {
         transform: translateY(0px);
     }
 }
-#developer{
+
+#developer {
     color: white;
     z-index: 10;
     font-family: Visby;
     margin-top: 250px;
-    
 }
-#myname{
-    
+
+#myname {
     color: white;
 }
 
 
 /* ABOUT */
-#about-wrapper{
+
+#about-wrapper {
     padding-top: 75px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#about-head{
+
+#about-head {
     font-size: 45px;
     color: white;
 }
-#sentences{
+
+#sentences {
     color: white;
     /* text-align: center; */
     padding: 20px;
     font-size: 20px;
 }
-#languages{
+
+#languages {
     display: flex;
     justify-content: space-evenly;
-    
 }
-#languages>img{
+
+#languages>img {
     background-color: white;
     width: 60px;
 }
 
 
-
-
 /* Work */
 
-#work-wrapper{
+#work-wrapper {
     display: flex;
     align-items: center;
     flex-direction: column;
-    
     background-color: rgb(250, 252, 255);
-    
 }
 
-#work-head{
+#work-head {
     color: rgb(29, 29, 31);
     background-color: rgb(250, 252, 255);
     margin: 100px 0px 0px 0px;
     padding-top: 75px;
     text-align: center;
-    
 }
 
-.site-wrap{
+.site-wrap {
     width: 300px;
     padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: end;
     align-items: center;
-
 }
 
-.work-logo{
+.work-logo {
     width: 75px;
     overflow-x: hidden;
     position: absolute;
     border: 4px solid rgb(29, 29, 31);
     z-index: 10;
     margin-top: 40px;
-    
-    
-    
 }
-.work-img{
+
+.work-img {
     width: 100%;
     border: 4px solid rgb(29, 29, 31);
     margin: 0px auto;
-    
 }
-.work-links{
+
+.work-links {
     width: 300px;
     display: flex;
     margin: 0 auto;
@@ -298,19 +298,21 @@ pointer-events: all;
     align-items: center;
     z-index: 11;
     margin-top: 25px;
-    
 }
-.qr-links{
+
+.qr-links {
     background-color: #ef3e23;
-    
 }
-.dream-links{
+
+.dream-links {
     background-color: #212121;
 }
-.weather-links{
+
+.weather-links {
     background-color: rgb(58, 208, 242);
 }
-.work-links>a{
+
+.work-links>a {
     border: 4px solid rgb(29, 29, 31);
     padding: 10px;
     color: white;
@@ -320,7 +322,7 @@ pointer-events: all;
     z-index: 11;
 }
 
-#dream-logo{
+#dream-logo {
     background-color: #212121;
     height: 55px;
     width: 55px;
@@ -328,66 +330,70 @@ pointer-events: all;
     border: 4px solid rgb(29, 29, 31);
 }
 
-#weather-logo{
+#weather-logo {
     background-color: rgb(58, 208, 242);
     height: 55px;
     width: 55px;
     padding: 10px;
 }
-#work-languages{
+
+#work-languages {
     display: flex;
     justify-content: space-evenly;
     width: 300px;
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 100px;
-    
-    
 }
-#work-languages>img{
+
+#work-languages>img {
     background-color: white;
     width: 60px;
     border: 4px solid rgb(29, 29, 31);
 }
 
+
 /* EDUCATION */
-#education-wrapper{
+
+#education-wrapper {
     height: 1000px;
     padding-top: 75px;
 }
 
-#edu-head{
+#edu-head {
     color: white;
     text-align: center;
 }
 
-#pdxcode-title{
+#pdxcode-title {
     color: white;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#guild-logo{
+
+#guild-logo {
     width: 35px;
     padding-left: 15px;
 }
 
-#clock-section{
+#clock-section {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-#time-tags{
+#time-tags {
     display: flex;
     flex-direction: column;
-    
 }
-.edu-taglines{
+
+.edu-taglines {
     color: white;
 }
-#clock-outline{
+
+#clock-outline {
     width: 350px;
     height: 350px;
     border: 20px solid white;
@@ -398,32 +404,30 @@ pointer-events: all;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
 }
-#clock-outline>img{
-    
+
+#clock-outline>img {
     position: absolute;
     transform: rotate(25deg);
 }
 
-#hour-hand{
+#hour-hand {
     background-color: white;
     width: 275px;
     height: 15px;
     position: absolute;
     transform: rotate(45deg);
     animation: clockRotate 15s linear infinite;
-    
 }
-#min-hand{
+
+#min-hand {
     background-color: white;
     width: 225px;
     height: 15px;
-    
-    
     position: absolute;
     animation: clockRotate 5s linear infinite;
 }
+
 
 /* #sec-hand{
     background-color: rgb(144, 221, 144);
@@ -436,29 +440,27 @@ pointer-events: all;
 }
  */
 
-
-
-#teaches-section{
+#teaches-section {
     margin-top: 100px;
     padding: 0px 25px 0px 25px;
-    
-    
 }
-.teachsub-section{
+
+.teachsub-section {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     margin-top: 75px;
-    
 }
 
-.align-start{
+.align-start {
     align-items: flex-start;
 }
-.frameworks{
+
+.frameworks {
     color: white;
 }
-#frameworklogo-wrap{
+
+#frameworklogo-wrap {
     width: 75%;
     position: absolute;
     display: flex;
@@ -468,11 +470,12 @@ pointer-events: all;
     height: 400px;
     animation: headshotBob 3s linear infinite;
 }
-#frameworklogo-wrap>img{
+
+#frameworklogo-wrap>img {
     width: 40%;
 }
 
-#programminglogo-wrap{
+#programminglogo-wrap {
     width: 75%;
     position: absolute;
     display: flex;
@@ -483,29 +486,30 @@ pointer-events: all;
     /* margin-left: 100px; */
     animation: headshotBob 3.5s linear infinite;
 }
-#programminglogo-wrap>img{
+
+#programminglogo-wrap>img {
     width: 40%;
 }
-#graduated-section{
+
+#graduated-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 950px;
 }
 
-#grad-title{
+#grad-title {
     color: white;
     text-align: center;
     margin-top: 250px;
 }
 
-#cert-img{
+#cert-img {
     width: 250px;
-    border:4px solid #f37024;
+    border: 4px solid #f37024;
 }
 
-#cert-title{
-    
+#cert-title {
     border: solid #f37024;
     border-width: 0px 4px 4px 4px;
     width: 250px;
@@ -514,20 +518,24 @@ pointer-events: all;
     color: white;
 }
 
-#tech-tools{
+#tech-tools {
     align-items: center;
 }
 
 #resume-link {
-    color:#f37024;
+    color: #f37024;
     margin: 60px 0px 0px 0px;
     padding: 15px;
 }
-#resume-link:hover{
-    color:#c24700;
+
+#resume-link:hover {
+    color: #c24700;
 }
+
+
 /* REACH OUT */
-#topo-reach-right{
+
+#topo-reach-right {
     position: absolute;
     width: 70px;
     right: 0;
@@ -535,28 +543,27 @@ pointer-events: all;
     margin-top: 300px;
 }
 
-#topo-reach-left{
+#topo-reach-left {
     position: absolute;
     width: 110px;
     transform: scaleX(-1);
     left: 0;
-    
 }
 
-#reachout-section{
+#reachout-section {
     background-color: rgb(250, 252, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
     padding-bottom: 100px;
-    
-    
 }
-#reachout-section>h1{
+
+#reachout-section>h1 {
     margin-top: 100px;
 }
-#reach-links{
+
+#reach-links {
     width: 325px;
     display: flex;
     margin: 0 auto;
@@ -565,7 +572,8 @@ pointer-events: all;
     z-index: 11;
     margin-top: 25px;
 }
-.reach-btns{
+
+.reach-btns {
     border: 4px solid rgb(29, 29, 31);
     background-color: #0f0f0f;
     padding: 15px;
@@ -575,21 +583,21 @@ pointer-events: all;
     z-index: 11;
     width: 100px;
 }
-.reach-btns:hover{
+
+.reach-btns:hover {
     background-color: #282828;
     cursor: pointer;
 }
 
 
-
-
 /* FOOTER */
-#footer-wrap{
+
+#footer-wrap {
     color: white;
     text-align: center;
     padding: 10px;
-    
 }
+
 @keyframes clockRotate {
     from {
         transform: rotate(0deg);
@@ -600,14 +608,8 @@ pointer-events: all;
 }
 
 
-
-
-
-
-
-
-
 /* FONTS */
+
 @font-face {
     font-family: 'Visby';
     src: url('/static/portfolio/font/visby.ttf');
@@ -616,137 +618,126 @@ pointer-events: all;
 
 /* MEDIA QURIES */
 
-
-
-@media screen and (min-width: 768px) { /* TABLET */
-    h1{
+@media screen and (min-width: 768px) {
+    /* TABLET */
+    h1 {
         font-size: 65px;
     }
-    .nav-option{
+    .nav-option {
         font-size: 30px;
         padding: 25px 0px 25px 0px;
     }
-    #about-wrapper{
+    #about-wrapper {
         padding: 30px 50px 0px 50px;
     }
-    #languages{
+    #languages {
         width: 500px;
         margin: 0 auto;
     }
-    #sentences{
+    #sentences {
         font-size: 30px;
     }
-    #teachsub{
+    #teachsub {
         max-width: 100vw;
     }
-  
-    
-    #clock-section{
+    #clock-section {
         margin: 200px 0px 200px 0px;
     }
-    #clock-outline{
+    #clock-outline {
         width: 600px;
         height: 600px;
         margin-left: -55%;
     }
-
-    #hour-hand{
+    #hour-hand {
         width: 350px;
         height: 20px;
         animation: clockRotate 6s linear infinite;
     }
-    #min-hand{
+    #min-hand {
         width: 300px;
         height: 20px;
         animation: clockRotate 3s linear infinite;
     }
-
-    #time-tags>h2{
+    #time-tags>h2 {
         font-size: 40px;
     }
-
-    .edu-taglines{
+    .edu-taglines {
         font-size: 40px;
     }
-    
-    .frameworks{
+    .frameworks {
         font-size: 30px;
     }
-    #frameworklogo-wrap{
+    #frameworklogo-wrap {
         height: 500px;
         width: 85%;
     }
-    #frameworklogo-wrap>img{
+    #frameworklogo-wrap>img {
         width: 200px;
     }
-
-    #programminglogo-wrap{
+    #programminglogo-wrap {
         height: 600px;
         width: 85%;
     }
-    #programminglogo-wrap>img{
+    #programminglogo-wrap>img {
         width: 200px;
     }
-    #graduated-section{
+    #graduated-section {
         margin-top: 2100px;
     }
-    #grad-title{
+    #grad-title {
         font-size: 40px;
     }
-    #cert-img{
+    #cert-img {
         width: 500px;
     }
-    #cert-title{
+    #cert-title {
         width: 500px;
         font-size: 25px;
     }
-    #resume-link{
+    #resume-link {
         font-size: 20px;
     }
-    #reach-links{
+    #reach-links {
         margin-top: 50px;
         width: 300px;
     }
 }
 
 @media screen and (min-width: 1024px) {
-    .work-logo{
+    .work-logo {
         filter: drop-shadow(0px 35px 30px #bbbbbb);
     }
-    .work-img{
+    .work-img {
         filter: drop-shadow(0px 35px 30px #bbbbbb);
     }
-    h1{
+    h1 {
         font-size: 65px !important;
     }
-    #work-wrapper{
+    #work-wrapper {
         align-items: center;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;  
+        justify-content: center;
         min-height: 850px;
     }
-    
-    .qr-links:hover{
+    .qr-links:hover {
         background-color: #c7341d;
-        
     }
-    .dream-links:hover{
+    .dream-links:hover {
         background-color: #0f0f0f;
     }
-    .weather-links:hover{
+    .weather-links:hover {
         background-color: rgb(48, 174, 202);
     }
-    #about-wrapper{
+    #about-wrapper {
         width: 750px;
         margin: 0 auto;
     }
-    #education-wrapper{
+    #education-wrapper {
         width: 1000px;
         margin: 0 auto;
-        
     }
-    #clock-outline{
+    #clock-outline {
         width: 550px;
         height: 550px;
         border: 20px solid white;
@@ -757,10 +748,9 @@ pointer-events: all;
         align-items: center;
         justify-content: center;
         /* transform: skew(-15deg, -15deg); */
-        
     }
-    #hour-hand{
-        background: linear-gradient(to right, rgba(255,255,255,1) 50%, rgba(243, 8, 8, 0) 50%);
+    #hour-hand {
+        background: linear-gradient(to right, rgba(255, 255, 255, 1) 50%, rgba(243, 8, 8, 0) 50%);
         width: 350px;
         height: 15px;
         color: white;
@@ -768,10 +758,9 @@ pointer-events: all;
         position: absolute;
         transform: rotate(45deg);
         animation: clockRotate 15s linear infinite;
-        
     }
-    #min-hand{
-        background: linear-gradient(to right, rgba(255,255,255,1) 50%, rgba(243, 8, 8, 0) 50%);
+    #min-hand {
+        background: linear-gradient(to right, rgba(255, 255, 255, 1) 50%, rgba(243, 8, 8, 0) 50%);
         width: 275px;
         height: 15px;
         color: white;
@@ -779,7 +768,7 @@ pointer-events: all;
         position: absolute;
         animation: clockRotate 5s linear infinite;
     }
-    #frameworklogo-wrap{
+    #frameworklogo-wrap {
         width: 800px;
         position: absolute;
         display: flex;
@@ -790,11 +779,11 @@ pointer-events: all;
         animation: headshotBob 3s linear infinite;
         padding: 100px 0px 0px 0px;
     }
-    #frameworklogo-wrap>img{
+    #frameworklogo-wrap>img {
         width: 40%;
         max-width: 200px;
     }
-    #programminglogo-wrap{
+    #programminglogo-wrap {
         width: 800px;
         position: absolute;
         display: flex;
@@ -805,7 +794,7 @@ pointer-events: all;
         animation: headshotBob 3.5s linear infinite;
         padding: 100px 100px 0px 0px;
     }
-    #programminglogo-wrap>img{
+    #programminglogo-wrap>img {
         width: 40%;
         max-width: 200px;
     }
