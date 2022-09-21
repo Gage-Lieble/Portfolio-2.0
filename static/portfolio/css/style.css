@@ -383,7 +383,14 @@ h1 {
     align-items: center;
     justify-content: space-around;
 }
-
+#mid-circle{
+    border-radius: 100px;
+    background-color: white;
+    position: relative;
+    width: 25px;
+    height: 25px;
+    
+}
 #time-tags {
     display: flex;
     flex-direction: column;
