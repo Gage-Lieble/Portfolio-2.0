@@ -116,7 +116,7 @@ window.addEventListener('scroll', changeNav)
 // MAIN WORD CHANGER
 let mainWord = document.getElementById('main-word')
 let start = 0
-let randomWords = ['SOFTWARE', 'DJANGO', 'WEBSITE', 'PYTHON', 'JAVASCRIPT']
+let randomWords = ['SOFTWARE', 'DJANGO', 'WEBSITE', 'JAVASCRIPT', 'PYTHON', 'VUE.JS']
 
 function changeWord() {
     mainWord.innerText = randomWords[start]
